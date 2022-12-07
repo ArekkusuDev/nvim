@@ -209,7 +209,6 @@ return packer.startup(function(use)
   -- Themes
   use {
     "catppuccin/nvim",
-    commit = "df1b7ff",
     as = "catppuccin",
     event = "UIEnter",
     run = ":CatppuccinCompile",
