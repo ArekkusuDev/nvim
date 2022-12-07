@@ -5,9 +5,7 @@ local colors = require("catppuccin.palettes").get_palette() -- fetch colors from
 local options = {
   transparent_background = true,
   dim_inactive = {
-    enable = true,
-    shade = "dark",
-    percentage = "0.5",
+    enabled = false,
   },
   compile = {
     enabled = true,
@@ -18,7 +16,6 @@ local options = {
     nvimtree = true,
     cmp = true,
     gitsigns = true,
-    ts_rainbow = true,
     mason = true,
     treesitter = true,
   },
@@ -74,7 +71,7 @@ local options = {
     TSMethod = { fg = colors.green }, -- For method calls and definitions.
     ["@function"] = { fg = colors.green }, -- For method calls and definitions.
     TSString = { fg = colors.yellow, style = { "italic" } }, -- For strings.
-    ["@string"] = { fg = colors.yellow, style = { "italic" } }, -- For strings.
+    ["@string"] = { fg = colors.yellow, style = { "italic", "bold" } }, -- For strings.
     BufferLineSeparator = { fg = colors.peach, bg = "NONE" },
     BufferLineBufferVisible = { fg = colors.surface1, bg = "NONE" },
     BufferLineBufferSelected = { fg = colors.text, bg = "NONE", style = { "bold", "italic" } }, -- current
